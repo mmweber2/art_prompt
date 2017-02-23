@@ -1,9 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+    <style>
+body {
+   margin: 0;
+   padding: 0;
+   background-color: cornsilk;
+   font-size: 100%;
+     }
+h1 {
+   text-align: center;
+   font-family: Verdana, Geneva, sans-serif;
+   }
+p {
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+  }
+div { 
+    border: 20px double;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 80px; /* Replace with JS-generated text or blank */
+    font-size: 2em;
+         }
+div.left, div.right {
+    background-color: #DEB887;
+    width: 33%;
+    position: relative;
+                    }
+div.button {
+    background-color: blue;
+    width: 20%;
+    position: relative;
+    margin: auto;
+    top: 50%;
+    padding: 10px 0;
+    font-size: 1.5em;
+             }
+.left {
+    float: left;
+    margin-left: 50px;
+      }
+.right {
+    float: right;
+    margin-right: 50px;
+       }
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    font-family: Verdana, Geneva, sans-serif
+                  }
+a:hover, a:active {
+    background-color: grey;
+                  }
+
+
+</style>
+    <title>Animal Prompt Generator</title>
+  </head>
     <body>
-      Here is the art prompt.
+      <h1>Animal Prompt Generator</h1>
+      <p>This page lets you generate a combination of adjectives and animal names to inspire your art or writing.</p>
+      <div class="left"><p class="category">Animal:</p></div>
+      <div class="right"><p class="category">Adjective:</p></div>
+      <!--Add div class of JS random result-->
+      <div class="button"><p><a href="reset.php">Click here to reset</a></p></div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="/toz/js/artPrompt.js"></script>
     </body>
-  </head>
 </html>
